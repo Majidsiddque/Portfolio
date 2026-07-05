@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Majid Siddque — Full-Stack &amp; Backend Engineer</title>
+<meta name="description" content="Portfolio of Abdul Majid Siddque — Computer Engineering student building full-stack, backend and AI systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">AM<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#profile" data-idx="00">00 · Profile</a></li>
+      <li><a href="#architecture" data-idx="01">01 · Stack</a></li>
+      <li><a href="#experience" data-idx="02">02 · Experience</a></li>
+      <li><a href="#projects" data-idx="03">03 · Projects</a></li>
+      <li><a href="#education" data-idx="04">04 · Education</a></li>
+      <li><a href="#contact" data-idx="05">05 · Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="#contact">Let's talk</a>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO / TERMINAL -->
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-grid"></div>
+  </div>
+
+  <div class="terminal" id="terminal">
+    <div class="terminal-bar">
+      <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+      <span class="terminal-title">profile.json — booting</span>
+    </div>
+    <pre class="terminal-body" id="terminalBody"></pre>
+  </div>
+
+  <div class="hero-reveal" id="heroReveal">
+    <p class="eyebrow mono">// final-year computer engineering student</p>
+    <h1 class="hero-title">
+      Abdul Majid<br>Siddque
+    </h1>
+    <p class="hero-role">Full-Stack Engineer <span class="sep">·</span> Backend Systems <span class="sep">·</span> AI &amp; Web</p>
+    <p class="hero-desc">I build production websites, REST APIs and AI-integrated platforms — currently shipping client work at DeepshiTech, and independently building an AI content-evaluation platform on the Gemini API.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View projects <span class="arrow">→</span></a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-count="3">0</span>
+        <span class="stat-label mono">internships</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="6" data-suffix="+">0</span>
+        <span class="stat-label mono">shipped projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="9.27" data-decimal="true">0</span>
+        <span class="stat-label mono">latest SGPA</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="2027">0</span>
+        <span class="stat-label mono">graduating</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#profile" class="scroll-cue" aria-label="Scroll down">
+    <span class="mono">scroll</span>
+    <span class="scroll-line"></span>
+  </a>
+</header>
+
+<main>
+
+  <!-- PROFILE -->
+  <section class="section" id="profile">
+    <div class="container">
+      <div class="section-head">
+        <span class="index mono">00</span>
+        <h2>Profile</h2>
+      </div>
+      <div class="profile-grid">
+        <p class="profile-text">
+          I'm a final-year Computer Engineering student at C. V. Raman Global University, Bhubaneswar, with hands-on
+          full-stack experience across React, Node.js, Express.js and MySQL. Across two remote internships I've taken
+          client sites from brief to production — responsive frontend, API integration, cross-device testing and CMS
+          setup — and outside of internships I'm independently building <strong>FactLens++</strong>, an AI-powered
+          content evaluation platform on the Gemini API. My fundamentals in DSA, OOP and system design sit underneath
+          all of it. I'm looking for a full-time software engineering role starting 2027.
+        </p>
+        <div class="profile-card">
+          <div class="profile-row"><span class="mono">location</span><span>Bhubaneswar, Odisha, IN</span></div>
+          <div class="profile-row"><span class="mono">email</span><a href="mailto:majidsiddique1278@gmail.com">majidsiddique1278@gmail.com</a></div>
+          <div class="profile-row"><span class="mono">phone</span><span>+91 94727 71277</span></div>
+          <div class="profile-row"><span class="mono">degree</span><span>B.Tech, Computer Engineering</span></div>
+          <div class="profile-row"><span class="mono">status</span><span class="tag-live">Open to full-time roles, 2027</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE / SKILLS -->
+  <section class="section section-alt" id="architecture">
+    <div class="container">
+      <div class="section-head">
+        <span class="index mono">01</span>
+        <h2>System architecture</h2>
+      </div>
+      <p class="section-intro">The way I think about my own stack — as a system, layer by layer. Hover a layer to see what's inside it.</p>
+
+      <div class="arch-wrap">
+        <svg class="arch-lines" id="archLines" viewBox="0 0 100 400" preserveAspectRatio="none" aria-hidden="true">
+          <path class="flow-path down" d="M50,0 L50,400" />
+          <path class="flow-path up" d="M50,0 L50,400" />
+        </svg>
+
+        <div class="layer" data-layer="client">
+          <div class="layer-head">
+            <span class="layer-idx mono">L1</span>
+            <h3>Client</h3>
+            <span class="layer-sub mono">what people see</span>
+          </div>
+          <div class="layer-chips">
+            <span>React</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Kotlin / Android</span>
+          </div>
+        </div>
+
+        <div class="layer" data-layer="api">
+          <div class="layer-head">
+            <span class="layer-idx mono">L2</span>
+            <h3>API layer</h3>
+            <span class="layer-sub mono">routes, logic, auth</span>
+          </div>
+          <div class="layer-chips">
+            <span>Node.js</span><span>Express.js</span><span>Spring Boot</span><span>REST APIs</span>
+          </div>
+        </div>
+
+        <div class="layer" data-layer="data">
+          <div class="layer-head">
+            <span class="layer-idx mono">L3</span>
+            <h3>Data layer</h3>
+            <span class="layer-sub mono">persistence</span>
+          </div>
+          <div class="layer-chips">
+            <span>MySQL</span><span>MongoDB</span><span>Hibernate</span><span>JDBC</span>
+          </div>
+        </div>
+
+        <div class="layer" data-layer="ai">
+          <div class="layer-head">
+            <span class="layer-idx mono">L4</span>
+            <h3>Intelligence layer</h3>
+            <span class="layer-sub mono">AI / ML</span>
+          </div>
+          <div class="layer-chips">
+            <span>Gemini API</span><span>OpenCV</span><span>Originality.ai</span><span>Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foundations">
+        <div class="found-col">
+          <h4 class="mono">// languages</h4>
+          <div class="layer-chips">
+            <span>JavaScript</span><span>Java</span><span>Python</span><span>C</span><span>SQL</span><span>Kotlin</span>
+          </div>
+        </div>
+        <div class="found-col">
+          <h4 class="mono">// fundamentals</h4>
+          <div class="layer-chips">
+            <span>DSA</span><span>OOP</span><span>System Design</span><span>DBMS</span><span>Computer Networks</span><span>Operating Systems</span>
+          </div>
+        </div>
+        <div class="found-col">
+          <h4 class="mono">// tooling</h4>
+          <div class="layer-chips">
+            <span>Git / GitHub</span><span>VS Code</span><span>IntelliJ IDEA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head">
+        <span class="index mono">02</span>
+        <h2>Experience</h2>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline-line" aria-hidden="true"><span class="timeline-fill"></span></div>
+
+        <article class="tl-item">
+          <div class="tl-node"></div>
+          <div class="tl-date mono">May 2026 — Present</div>
+          <div class="tl-card">
+            <h3>Web Development Intern</h3>
+            <p class="tl-company">DeepshiTech Pvt. Ltd. <span class="mono">· remote</span></p>
+            <p>Developing client websites end-to-end — responsive frontend, backend/API integration, cross-device testing and CMS setup. Currently contributing to the company's own site, deepshitech.com.</p>
+            <div class="tl-links">
+              <span class="tl-label mono">delivered:</span>
+              <a href="https://test.deepshitech.online/" target="_blank" rel="noopener">GICE Academy ↗</a>
+              <a href="https://test.shravakventures.com/index3.html" target="_blank" rel="noopener">Shravak Ventures ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="tl-item">
+          <div class="tl-node"></div>
+          <div class="tl-date mono">Mar — Apr 2026</div>
+          <div class="tl-card">
+            <h3>Web Developer Intern</h3>
+            <p class="tl-company">Pinnacle Labs <span class="mono">· remote</span></p>
+            <p>Delivered a responsive restaurant webpage, an interactive event organiser with dynamic JS rendering, and a full CRUD to-do list application.</p>
+          </div>
+        </article>
+
+        <article class="tl-item">
+          <div class="tl-node"></div>
+          <div class="tl-date mono">Mar 2026</div>
+          <div class="tl-card">
+            <h3>Moderator Intern</h3>
+            <p class="tl-company">SeedingMinds / ORCADEHUB LLP <span class="mono">· remote</span></p>
+            <p>Managed an online technical community and contributed learning content across Python, Java, DSA, HTML, CSS and JavaScript.</p>
+            <div class="tl-links">
+              <button class="cert-view-btn" data-cert="assets/certs/seedingminds-internship.jpg" data-title="Certificate of Internship — SeedingMinds / ORCADEHUB LLP">View certificate ↗</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <span class="index mono">03</span>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="pcard pcard-feature">
+          <div class="pcard-corner tl"></div><div class="pcard-corner tr"></div>
+          <div class="pcard-corner bl"></div><div class="pcard-corner br"></div>
+          <span class="pcard-status mono">in progress</span>
+          <h3>FactLens++</h3>
+          <p>A full-stack platform — React (Vite) SPA over a Node/Express REST API and MongoDB — built around three AI-driven modules powered by Google's Gemini API.</p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="feature-icon mono">01</span>
+              <div>
+                <h4>Credibility Verifier</h4>
+                <p>Paste text, upload a document (PDF/DOCX/PPTX) or drop an image — Gemini's text and vision models return a credibility score, verdict, per-claim confidence, red flags and suggestions.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon mono">02</span>
+              <div>
+                <h4>AI Project Guide</h4>
+                <p>Students describe a project idea and get back a structured, step-by-step roadmap with time estimates and tips — progress is tracked and persisted per step.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon mono">03</span>
+              <div>
+                <h4>Educator Grading Dashboard</h4>
+                <p>Educators upload student submissions against a custom rubric; grading, plagiarism (Originality.ai) and AI-detection scores run concurrently and roll up into a class-wide dashboard.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pcard-tags">
+            <span>React + Vite</span><span>Node.js</span><span>Express.js</span><span>MongoDB / Mongoose</span><span>Gemini API</span><span>Originality.ai</span><span>Multer</span><span>pdf-parse / mammoth</span>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard-corner tl"></div><div class="pcard-corner tr"></div>
+          <div class="pcard-corner bl"></div><div class="pcard-corner br"></div>
+          <h3>RESTful Content API</h3>
+          <p>A Spring Boot REST API built with a clean Controller/Service/Repository structure — full CRUD, search/filter/pagination, field indexing and Hibernate ORM, serving 100+ entries.</p>
+          <div class="pcard-tags">
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>Hibernate</span>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard-corner tl"></div><div class="pcard-corner tr"></div>
+          <div class="pcard-corner bl"></div><div class="pcard-corner br"></div>
+          <h3>AI Face Recognition Attendance</h3>
+          <p>A real-time face detection and recognition pipeline that logs attendance automatically, built with a layered architecture and retry logic for reliability.</p>
+          <div class="pcard-tags">
+            <span>Python</span><span>OpenCV</span><span>ML</span>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard-corner tl"></div><div class="pcard-corner tr"></div>
+          <div class="pcard-corner bl"></div><div class="pcard-corner br"></div>
+          <h3>Systems &amp; Simulations</h3>
+          <ul class="pcard-list">
+            <li><strong>Resource Management Backend</strong> — JDBC-connected MySQL backend with indexed, transaction-safe CRUD.</li>
+            <li><strong>Banking System</strong> — a Python OOP simulation with custom exception handling.</li>
+            <li><strong>Snake Game</strong> — an Android game in Kotlin with collision detection and scoring.</li>
+          </ul>
+          <div class="pcard-tags">
+            <span>Java / JDBC</span><span>Python OOP</span><span>Kotlin</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + CERTS + ACHIEVEMENTS -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-head">
+        <span class="index mono">04</span>
+        <h2>Education &amp; credentials</h2>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-main">
+          <h3>B.Tech in Computer Engineering</h3>
+          <p class="edu-uni">C. V. Raman Global University, Bhubaneswar</p>
+          <p class="edu-course">Coursework: DSA, OOP, DBMS, Computer Networks, OS, AI &amp; ML, Web Technology</p>
+        </div>
+        <div class="edu-metrics">
+          <div><span class="edu-num">2023–27</span><span class="mono">years</span></div>
+          <div><span class="edu-num">7.85</span><span class="mono">CGPA</span></div>
+          <div><span class="edu-num">9.27</span><span class="mono">latest SGPA</span></div>
+        </div>
+      </div>
+
+      <h4 class="mono col-title">// featured certifications</h4>
+      <div class="cert-grid">
+        <button class="cert-card" data-cert="assets/certs/udemy-aws-ai.jpg" data-title="Mastering AI on AWS: Training AWS Certified AI-Practitioner — Udemy">
+          <img src="assets/certs/udemy-aws-ai.jpg" alt="Udemy certificate: Mastering AI on AWS" loading="lazy">
+          <div class="cert-card-info">
+            <h5>Mastering AI on AWS</h5>
+            <p>Udemy · AWS Certified AI-Practitioner prep <span class="mono cert-date">Jun 2026</span></p>
+          </div>
+        </button>
+        <button class="cert-card" data-cert="assets/certs/deloitte-data-analytics.jpg" data-title="Data Analytics Job Simulation — Deloitte">
+          <img src="assets/certs/deloitte-data-analytics.jpg" alt="Deloitte Data Analytics Job Simulation certificate" loading="lazy">
+          <div class="cert-card-info">
+            <h5>Data Analytics Job Simulation</h5>
+            <p>Deloitte, via Forage <span class="mono cert-date">May 2026</span></p>
+          </div>
+        </button>
+        <button class="cert-card" data-cert="assets/certs/google-ux-design.jpg" data-title="Google UX Design Professional Certificate">
+          <img src="assets/certs/google-ux-design.jpg" alt="Google UX Design Professional Certificate" loading="lazy">
+          <div class="cert-card-info">
+            <h5>Google UX Design</h5>
+            <p>Coursera · 8-course specialization <span class="mono cert-date">Nov 2025</span></p>
+          </div>
+        </button>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h4 class="mono col-title">// additional certifications</h4>
+          <ul class="cert-list">
+            <li><span class="cert-dot"></span>Seeding Minds — Java Full Stack (Spring Boot, React, REST APIs, AWS, SQL/MongoDB) <span class="mono cert-date">Apr 2026</span></li>
+            <li><span class="cert-dot"></span>Seeding Minds — Java DSA <span class="mono cert-date">Jan 2026</span></li>
+            <li><span class="cert-dot"></span>Infosys Springboard — Generative AI, Deep Learning, Agile Scrum</li>
+            <li><span class="cert-dot"></span>NPTEL — Innovation by Design</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mono col-title">// achievements</h4>
+          <ul class="cert-list">
+            <li><span class="cert-dot orange"></span>Internal Hackathon qualifier — pre-qualifier round for Smart India Hackathon</li>
+            <li><span class="cert-dot orange"></span>Basketball Club President <span class="mono cert-date">2025–26</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="section-head light">
+        <span class="index mono">05</span>
+        <h2>Let's build something</h2>
+      </div>
+      <p class="footer-lead">Looking for a full-time software engineering role starting 2027 — open to conversations before that too. The fastest way to reach me is email.</p>
+
+      <div class="footer-grid">
+        <a class="contact-link" href="mailto:majidsiddique1278@gmail.com">
+          <span class="mono">email</span>
+          <strong>majidsiddique1278@gmail.com</strong>
+        </a>
+        <a class="contact-link" href="tel:+919472771277">
+          <span class="mono">phone</span>
+          <strong>+91 94727 71277</strong>
+        </a>
+        <a class="contact-link" href="#" target="_blank" rel="noopener">
+          <span class="mono">linkedin</span>
+          <strong>Add your LinkedIn URL ↗</strong>
+        </a>
+        <a class="contact-link" href="#" target="_blank" rel="noopener">
+          <span class="mono">github</span>
+          <strong>Add your GitHub URL ↗</strong>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Abdul Majid Siddque · Bhubaneswar, Odisha</span>
+        <span class="mono">built with HTML · CSS · JS — no frameworks</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <figure class="lightbox-figure">
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCaption" class="mono"></figcaption>
+  </figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
